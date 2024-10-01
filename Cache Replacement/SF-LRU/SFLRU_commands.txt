@@ -1,0 +1,107 @@
+/*COMMANDS TO RUN ON DIFFERENT BENCHMARKS*/
+/* Run these in simulator directory*/
+/*make in ss3 directory*/
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/gcc.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/perl.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/go.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/ijpeg.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/li.out
+
+/*COMMANDS TO RUN ON DIFFERENT ASSOCIATIVITY*/
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/gcc_asso1.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:2:z" >& results/gcc_asso2.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:4:z" >& results/gcc_asso4.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:8:z" >& results/gcc_asso8.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:16:z" >& results/gcc_asso16.out
+
+/*COMMANDS TO RUN ON DIFFERENT BLOCK SIZES*/
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/gcc_block16KB.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:64:1:z" >& results/gcc_block32KB.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:128:1:z" >& results/gcc_block64KB.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:256:1:z" >& results/gcc_block128KB.out
+
+/*COMMANDS TO RUN ON DIFFERENT NO OF SETS*/
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/gcc_sets512.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:1024:32:1:z" >& results/gcc_sets1024.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:2048:32:1:z" >& results/gcc_sets2048.out
+./Run.pl -db ./bench.db -dir results/gcc1 -benchmark gcc -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:4096:32:1:z" >& results/gcc_sets4096.out
+
+/*PERL BENCHMARK*/
+/*COMMANDS TO RUN ON DIFFERENT ASSOCIATIVITY*/
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Perl_asso1.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:2:z" >& results/Perl_asso2.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:4:z" >& results/Perl_asso4.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:8:z" >& results/Perl_asso8.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:16:z" >& results/Perl_asso16.out
+
+/*COMMANDS TO RUN ON DIFFERENT BLOCK SIZES*/
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Perl_block16KB.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:64:1:z" >& results/Perl_block32KB.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:128:1:z" >& results/Perl_block64KB.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:256:1:z" >& results/Perl_block128KB.out
+
+/*COMMANDS TO RUN ON DIFFERENT NO OF SETS*/
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Perl_sets512.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:1024:32:1:z" >& results/Perl_sets1024.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:2048:32:1:z" >& results/Perl_sets2048.out
+./Run.pl -db ./bench.db -dir results/perl -benchmark perl -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:4096:32:1:z" >& results/Perl_sets4096.out
+
+/*GO BENCHMARK*/
+/*COMMANDS TO RUN ON DIFFERENT ASSOCIATIVITY*/
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Go_asso1.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:2:z" >& results/Go_asso2.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:4:z" >& results/Go_asso4.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:8:z" >& results/Go_asso8.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:16:z" >& results/Go_asso16.out
+
+/*COMMANDS TO RUN ON DIFFERENT BLOCK SIZES*/
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Go_block16KB.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:64:1:z" >& results/Go_block32KB.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:128:1:z" >& results/Go_block64KB.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:256:1:z" >& results/Go_block128KB.out
+
+/*COMMANDS TO RUN ON DIFFERENT NO OF SETS*/
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/Go_sets512.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:1024:32:1:z" >& results/Go_sets1024.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:2048:32:1:z" >& results/Go_sets2048.out
+./Run.pl -db ./bench.db -dir results/go -benchmark go -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:4096:32:1:z" >& results/Go_sets4096.out
+
+/*jpeg BENCHMARK*/
+/*COMMANDS TO RUN ON DIFFERENT ASSOCIATIVITY*/
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/ijpeg_asso1.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:2:z" >& results/ijpeg_asso2.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:4:z" >& results/ijpeg_asso4.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:8:z" >& results/ijpeg_asso8.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:16:z" >& results/ijpeg_asso16.out
+
+/*COMMANDS TO RUN ON DIFFERENT BLOCK SIZES*/
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/ijpeg_block16KB.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:64:1:z" >& results/ijpeg_block32KB.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:128:1:z" >& results/ijpeg_block64KB.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:256:1:z" >& results/ijpeg_block128KB.out
+
+/*COMMANDS TO RUN ON DIFFERENT NO OF SETS*/
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/ijpeg_sets512.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:2048:32:1:z" >& results/ijpeg_sets2048.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:4096:32:1:z" >& results/ijpeg_sets4096.out
+./Run.pl -db ./bench.db -dir results/ijpeg -benchmark ijpeg -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:1024:32:1:z" >& results/ijpeg_sets1024.out
+
+/*li BENCHMARK*/
+/*COMMANDS TO RUN ON DIFFERENT ASSOCIATIVITY*/
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/li_asso1.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:2:z" >& results/li_asso2.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:4:z" >& results/li_asso4.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:8:z" >& results/li_asso8.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:16:z" >& results/li_asso16.out
+
+/*COMMANDS TO RUN ON DIFFERENT BLOCK SIZES*/
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/li_block16KB.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:64:1:z" >& results/li_block32KB.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:128:1:z" >& results/li_block64KB.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:256:1:z" >& results/li_block128KB.out
+
+/*COMMANDS TO RUN ON DIFFERENT NO OF SETS*/
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:512:32:1:z" >& results/li_sets512.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:1024:32:1:z" >& results/li_sets1024.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:2048:32:1:z" >& results/li_sets2048.out
+./Run.pl -db ./bench.db -dir results/li -benchmark li -sim /u/manojmur/ACA/simulator/ss3/sim-outorder -args "-fastfwd 5000000 -max:inst 1000000 -cache:il1 il1:4096:32:1:z" >& results/li_sets4096.out

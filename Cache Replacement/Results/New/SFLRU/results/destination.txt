@@ -1,0 +1,1 @@
+sim_IPC                      0.8435 # instructions per cycle

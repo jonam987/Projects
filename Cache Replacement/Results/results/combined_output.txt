@@ -1,0 +1,70 @@
+From file ./gcc_sets2048.out: sim_IPC                      1.1110 # instructions per cycle
+From file ./Go_asso4.out: sim_IPC                      1.3848 # instructions per cycle
+From file ./gcc_block64KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./li_asso2.out: sim_IPC                      1.6103 # instructions per cycle
+From file ./ijpeg_sets512.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./gcc_asso8.out: sim_IPC                      1.3546 # instructions per cycle
+From file ./ijpeg_asso4.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./gcc_sets4096.out: sim_IPC                      1.1883 # instructions per cycle
+From file ./Go_block64KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./ijpeg_block128KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./ijpeg_block16KB.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./gcc_asso1.out: sim_IPC                      0.7171 # instructions per cycle
+From file ./gcc_block32KB.out: sim_IPC                      1.0239 # instructions per cycle
+From file ./li_asso16.out: sim_IPC                      1.6180 # instructions per cycle
+From file ./li_sets2048.out: sim_IPC                      1.6103 # instructions per cycle
+From file ./gcc_asso16.out: sim_IPC                      1.3572 # instructions per cycle
+From file ./Perl_asso1.out: sim_IPC                      1.0775 # instructions per cycle
+From file ./Go_sets2048.out: sim_IPC                      1.3545 # instructions per cycle
+From file ./Perl_asso8.out: sim_IPC                      1.6836 # instructions per cycle
+From file ./ijpeg_sets1024.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./Go_asso2.out: sim_IPC                      1.3059 # instructions per cycle
+From file ./Perl_sets2048.out: sim_IPC                      1.5040 # instructions per cycle
+From file ./go.out: sim_IPC                      1.1844 # instructions per cycle
+From file ./Go_sets4096.out: sim_IPC                      1.4292 # instructions per cycle
+From file ./Go_block32KB.out: sim_IPC                      1.3718 # instructions per cycle
+From file ./ijpeg_asso2.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./gcc_sets512.out: sim_IPC                      0.7171 # instructions per cycle
+From file ./Perl_sets4096.out: sim_IPC                      1.6293 # instructions per cycle
+From file ./Go_block128KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./li_sets4096.out: sim_IPC                      1.6180 # instructions per cycle
+From file ./ijpeg_asso16.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./li_block16KB.out: sim_IPC                      1.5240 # instructions per cycle
+From file ./li_asso4.out: sim_IPC                      1.6180 # instructions per cycle
+From file ./Perl_block16KB.out: sim_IPC                      1.0775 # instructions per cycle
+From file ./gcc_asso4.out: sim_IPC                      1.2922 # instructions per cycle
+From file ./ijpeg_asso1.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./Perl_block64KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./ijpeg_asso8.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./li_block64KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./ijpeg_block32KB.out: sim_IPC                      2.5466 # instructions per cycle
+From file ./gcc_sets1024.out: sim_IPC                      0.9141 # instructions per cycle
+From file ./Perl_sets512.out: sim_IPC                      1.0775 # instructions per cycle
+From file ./Perl_asso16.out: sim_IPC                      1.6836 # instructions per cycle
+From file ./li.out: sim_IPC                      1.5240 # instructions per cycle
+From file ./Perl_asso2.out: sim_IPC                      1.3345 # instructions per cycle
+From file ./Go_asso8.out: sim_IPC                      1.4961 # instructions per cycle
+From file ./Go_asso1.out: sim_IPC                      1.1844 # instructions per cycle
+From file ./Perl_block128KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./Perl_sets1024.out: sim_IPC                      1.2783 # instructions per cycle
+From file ./ijpeg_sets2048.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./Go_sets512.out: sim_IPC                      1.1844 # instructions per cycle
+From file ./Go_sets1024.out: sim_IPC                      1.2623 # instructions per cycle
+From file ./li_asso1.out: sim_IPC                      1.5240 # instructions per cycle
+From file ./ijpeg_block64KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./li_sets1024.out: sim_IPC                      1.5444 # instructions per cycle
+From file ./ijpeg.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./li_block128KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./Go_block16KB.out: sim_IPC                      1.1844 # instructions per cycle
+From file ./li_asso8.out: sim_IPC                      1.6180 # instructions per cycle
+From file ./Perl_block32KB.out: sim_IPC                      1.3983 # instructions per cycle
+From file ./li_block32KB.out: sim_IPC                      1.5655 # instructions per cycle
+From file ./gcc.out: sim_IPC                      0.7171 # instructions per cycle
+From file ./gcc_asso2.out: sim_IPC                      0.9974 # instructions per cycle
+From file ./gcc_block128KB.out: sim_IPC                <error: divide by zero> # instructions per cycle
+From file ./gcc_block16KB.out: sim_IPC                      0.7171 # instructions per cycle
+From file ./Perl_asso4.out: sim_IPC                      1.6352 # instructions per cycle
+From file ./Go_asso16.out: sim_IPC                      1.5211 # instructions per cycle
+From file ./li_sets512.out: sim_IPC                      1.5240 # instructions per cycle
+From file ./ijpeg_sets4096.out: sim_IPC                      2.5464 # instructions per cycle
+From file ./perl.out: sim_IPC                      1.0775 # instructions per cycle
