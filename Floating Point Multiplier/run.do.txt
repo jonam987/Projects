@@ -1,0 +1,23 @@
+if [file exists "work"] {vdel -all}
+vlib work
+
+#Compiling the RTL & Testbench Files
+vlog -source -lint -sv fpu_sp_mul.sv
+vlog -source -lint -sv fpu_top.sv scb.c
+
+vopt top -o top_opt +acc +cover=sbfec
+vsim top_opt -coverage +UVM_TESTNAME=fpu_test
+vcd file top.vcd
+vcd add -r top/*
+
+set NoQuitOnFinish 1
+onbreak {resume}
+log /* -r
+run -all
+
+coverage save fpu_test.ucdb
+quit -sim
+
+
+vcover merge output.ucdb fpu_test.ucdb 
+vcover report output.ucdb -cvg -details

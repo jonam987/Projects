@@ -1,0 +1,396 @@
+# QuestaSim-64 vlog 2025.2_1 Compiler 2025.06 Jun 25 2025
+# Start time: 12:36:08 on Dec 09,2025
+# vlog -reportprogress 300 -source -lint -sv fpu_sp_mul.sv 
+# ** Note: (vlog-220) '//thoth.cecs.pdx.edu/Home03/manojmur/Desktop/FP/Floating Point/FP_Verif.mpf' is used as the ini file.
+# -- Compiling module fpu_sp_mul
+# 
+# Top level modules:
+# 	fpu_sp_mul
+# End time: 12:36:09 on Dec 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2025.2_1 Compiler 2025.06 Jun 25 2025
+# Start time: 12:36:09 on Dec 09,2025
+# vlog -reportprogress 300 -source -lint -sv fpu_top.sv scb.c 
+# ** Note: (vlog-220) '//thoth.cecs.pdx.edu/Home03/manojmur/Desktop/FP/Floating Point/FP_Verif.mpf' is used as the ini file.
+# ** Note: (vlog-2286) fpu_top.sv(2): Using implicit +incdir+C:/questasim64_2025.2_1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+###### ** while parsing file included at fpu_top.sv(4)
+# ** while parsing file included at fpu_def.sv(4)
+# ** at fpu_sequence.sv(1): class fpu_base_sequence extends uvm_sequence;
+# 
+# ** Warning: ** while parsing file included at fpu_top.sv(4)
+# ** while parsing file included at fpu_def.sv(4)
+# ** at fpu_sequence.sv(1): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+# -- Compiling package fpu_top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Warning: fpu_sequence.sv(1): (vlog-2181) Use of a parameterized class uvm_sequence as a type creates a default specialization.
+###### fpu_sequence.sv(27):     item.randomize() with { rst_n == 0;};
+# 
+# ** Warning: fpu_sequence.sv(27): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(50):     item.randomize() with { rst_n == 1;
+# 
+# ** Warning: fpu_sequence.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(75):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(75): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(97):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(97): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(117):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(117): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(137):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(137): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(155):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(155): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(173):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(173): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(190):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(190): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(208):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(208): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling interface fpu_if
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# -- Compiling DPI/PLI C file scb.c
+# End time: 12:36:10 on Dec 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 12
+# QuestaSim-64 vopt 2025.2_1 Compiler 2025.06 Jun 25 2025
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# Start time: 12:36:10 on Dec 09,2025
+# vopt -reportprogress 300 top -o top_opt "+acc" "+cover=sbfec" 
+# ** Note: (vopt-220) '//thoth.cecs.pdx.edu/Home03/manojmur/Desktop/FP/Floating Point/FP_Verif.mpf' is used as the ini file.
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface fpu_if
+# -- Loading module fpu_sp_mul
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# Optimizing 7 design-units (inlining 0/3 module instances):
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package fpu_top_sv_unit(fast)
+###### fpu_sequence.sv(27):     item.randomize() with { rst_n == 0;};
+# 
+# ** Warning: fpu_sequence.sv(27): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(50):     item.randomize() with { rst_n == 1;
+# 
+# ** Warning: fpu_sequence.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(75):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(75): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(97):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(97): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(117):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(117): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(137):             item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(137): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(155):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(155): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(173):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(173): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(190):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(190): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+###### fpu_sequence.sv(208):         item.randomize() with { rst_n == 1; dval == 1; };
+# 
+# ** Warning: fpu_sequence.sv(208): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Optimizing module fpu_sp_mul(fast)
+# ** Note: (vopt-143) Recognized 1 FSM in module "fpu_sp_mul(fast)".
+# -- Optimizing module top(fast)
+# -- Optimizing interface fpu_if(fast__2)
+# -- Optimizing interface fpu_if(fast)
+# Optimized design name is top_opt
+# End time: 12:36:16 on Dec 09,2025, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 12
+# ** Note: (vsim-220) '//thoth.cecs.pdx.edu/Home03/manojmur/Desktop/FP/Floating Point/FP_Verif.mpf' is used as the ini file.
+# vsim top_opt -coverage "+UVM_TESTNAME=fpu_test" 
+# Start time: 12:36:16 on Dec 09,2025
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.fpu_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.fpu_if(fast__2)
+# Loading work.fpu_sp_mul(fast)
+# Loading work.fpu_if(fast)
+# Loading C:/Users/manojmur/AppData/Local/Temp\manojmur@FAB07_dpi_25252\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/questasim64_2025.2_1/uvm-1.1d\win64\uvm_dpi.dll
+# 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO fpu_top.sv(29) @ 0: reporter [TOP] Configured database for interface...
+# UVM_INFO @ 0: reporter [RNTST] Running test fpu_test...
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /top/#INITIAL#36 File: fpu_top.sv Line: 37
+# UVM_INFO fpu_test.sv(39) @ 0: uvm_test_top [uvm_test_top] Inside reset sequence, Resetting the DUT...
+# UVM_INFO fpu_test.sv(44) @ 2: uvm_test_top [uvm_test_top] Inside Main sequence, Normal numbers testing...
+# UVM_INFO fpu_test.sv(50) @ 1855: uvm_test_top [uvm_test_top] Inside Zero_Denorm sequence, Zero and Denormal numbers testing for din1...
+# UVM_INFO fpu_test.sv(56) @ 4483: uvm_test_top [uvm_test_top] Inside Zero_Denorm sequence, Zero and Denormal numbers testing for din2...
+# UVM_INFO fpu_test.sv(62) @ 7067: uvm_test_top [uvm_test_top] Inside Inf_NaN sequence, Infinity and NaN numbers testing for din1...
+# UVM_INFO fpu_test.sv(68) @ 7467: uvm_test_top [uvm_test_top] Inside Inf_NaN sequence, Infinity and NaN numbers testing for din2...
+# UVM_INFO fpu_test.sv(74) @ 7867: uvm_test_top [uvm_test_top] Inside Both_Zero sequence, Both din1 and din2 are zeroes...
+# UVM_INFO fpu_test.sv(80) @ 8267: uvm_test_top [uvm_test_top] Inside Both_Denormal sequence, Both din1 and din2 are denormals...
+# UVM_INFO fpu_test.sv(86) @ 22505: uvm_test_top [uvm_test_top] Inside Both_Inf sequence, Both din1 and din2 are Infinity...
+# UVM_INFO fpu_test.sv(92) @ 23187: uvm_test_top [uvm_test_top] Inside Both_NaN sequence, Both din1 and din2 are NaN...
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 23587: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO fpu_scoreboard.sv(126) @ 23587: uvm_test_top.env.scb [scb] Total tests: 449
+# UVM_INFO fpu_scoreboard.sv(127) @ 23587: uvm_test_top.env.scb [scb] Passed tests: 449
+# UVM_INFO fpu_scoreboard.sv(128) @ 23587: uvm_test_top.env.scb [scb] Failed  tests: 0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   18
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [scb]     3
+# [uvm_test_top]    10
+# ** Note: $finish    : C:/questasim64_2025.2_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 23587 ns  Iteration: 62  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2025.2_1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 12:36:33 on Dec 09,2025, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 2
+# QuestaSim-64 vcover 2025.2_1 Coverage Utility 2025.06 Jun 25 2025
+# Start time: 12:36:33 on Dec 09,2025
+# vcover merge output.ucdb fpu_test.ucdb 
+# QuestaSim-64 vcover 2025.2_1 Coverage Utility 2025.06 Jun 25 2025
+# Merging file fpu_test.ucdb
+# Writing merged result to output.ucdb
+# 
+# End time: 12:36:33 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2025.2_1 Coverage Utility 2025.06 Jun 25 2025
+# Start time: 12:36:33 on Dec 09,2025
+# vcover report output.ucdb -cvg -details 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /fpu_top_sv_unit
+# === Design Unit: work.fpu_top_sv_unit
+# =================================================================================
+# 
+# Covergroup Coverage:
+#     Covergroups                      1        na        na    94.44%
+#         Coverpoints/Crosses          4        na        na        na
+#             Covergroup Bins         18        16         2    88.88%
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /fpu_top_sv_unit/fpu_scoreboard/fpu_mul_coverage 
+#                                                        94.44%        100          -    Uncovered            
+#     covered/total bins:                                    16         18          -                      
+#     missing/total bins:                                     2         18          -                      
+#     % Hit:                                             88.88%        100          -                      
+#     Coverpoint din1_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint din2_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint result_class                           100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   169          1          -    Covered              
+#         bin normal                                         77          1          -    Covered              
+#         bin special                                       203          1          -    Covered              
+#     Cross cross_class                                  77.77%        100          -    Uncovered            
+#         covered/total bins:                                 7          9          -                      
+#         missing/total bins:                                 2          9          -                      
+#         % Hit:                                         77.77%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <special,special>                          99          1          -    Covered              
+#             bin <normal,special>                           50          1          -    Covered              
+#             bin <special,normal>                           50          1          -    Covered              
+#             bin <normal,normal>                            50          1          -    Covered              
+#             bin <zero_denorm,normal>                       50          1          -    Covered              
+#             bin <normal,zero_denorm>                       50          1          -    Covered              
+#             bin <zero_denorm,zero_denorm>                 100          1          -    Covered              
+#             bin <zero_denorm,special>                       0          1          1    ZERO                 
+#             bin <special,zero_denorm>                       0          1          1    ZERO                 
+#  Covergroup instance \/fpu_top_sv_unit::fpu_scoreboard::fpu_mul_coverage  
+#                                                        94.44%        100          -    Uncovered            
+#     covered/total bins:                                    16         18          -                      
+#     missing/total bins:                                     2         18          -                      
+#     % Hit:                                             88.88%        100          -                      
+#     Coverpoint din1_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint din2_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint result_class                           100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   169          1          -    Covered              
+#         bin normal                                         77          1          -    Covered              
+#         bin special                                       203          1          -    Covered              
+#     Cross cross_class                                  77.77%        100          -    Uncovered            
+#         covered/total bins:                                 7          9          -                      
+#         missing/total bins:                                 2          9          -                      
+#         % Hit:                                         77.77%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <special,special>                          99          1          -    Covered              
+#             bin <normal,special>                           50          1          -    Covered              
+#             bin <special,normal>                           50          1          -    Covered              
+#             bin <normal,normal>                            50          1          -    Covered              
+#             bin <zero_denorm,normal>                       50          1          -    Covered              
+#             bin <normal,zero_denorm>                       50          1          -    Covered              
+#             bin <zero_denorm,zero_denorm>                 100          1          -    Covered              
+#             bin <zero_denorm,special>                       0          1          1    ZERO                 
+#             bin <special,zero_denorm>                       0          1          1    ZERO                 
+# 
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /fpu_top_sv_unit/fpu_scoreboard/fpu_mul_coverage 
+#                                                        94.44%        100          -    Uncovered            
+#     covered/total bins:                                    16         18          -                      
+#     missing/total bins:                                     2         18          -                      
+#     % Hit:                                             88.88%        100          -                      
+#     Coverpoint din1_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint din2_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint result_class                           100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   169          1          -    Covered              
+#         bin normal                                         77          1          -    Covered              
+#         bin special                                       203          1          -    Covered              
+#     Cross cross_class                                  77.77%        100          -    Uncovered            
+#         covered/total bins:                                 7          9          -                      
+#         missing/total bins:                                 2          9          -                      
+#         % Hit:                                         77.77%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <special,special>                          99          1          -    Covered              
+#             bin <normal,special>                           50          1          -    Covered              
+#             bin <special,normal>                           50          1          -    Covered              
+#             bin <normal,normal>                            50          1          -    Covered              
+#             bin <zero_denorm,normal>                       50          1          -    Covered              
+#             bin <normal,zero_denorm>                       50          1          -    Covered              
+#             bin <zero_denorm,zero_denorm>                 100          1          -    Covered              
+#             bin <zero_denorm,special>                       0          1          1    ZERO                 
+#             bin <special,zero_denorm>                       0          1          1    ZERO                 
+#  Covergroup instance \/fpu_top_sv_unit::fpu_scoreboard::fpu_mul_coverage  
+#                                                        94.44%        100          -    Uncovered            
+#     covered/total bins:                                    16         18          -                      
+#     missing/total bins:                                     2         18          -                      
+#     % Hit:                                             88.88%        100          -                      
+#     Coverpoint din1_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint din2_class                             100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   150          1          -    Covered              
+#         bin normal                                        150          1          -    Covered              
+#         bin special                                       149          1          -    Covered              
+#     Coverpoint result_class                           100.00%        100          -    Covered              
+#         covered/total bins:                                 3          3          -                      
+#         missing/total bins:                                 0          3          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin zero_denorm                                   169          1          -    Covered              
+#         bin normal                                         77          1          -    Covered              
+#         bin special                                       203          1          -    Covered              
+#     Cross cross_class                                  77.77%        100          -    Uncovered            
+#         covered/total bins:                                 7          9          -                      
+#         missing/total bins:                                 2          9          -                      
+#         % Hit:                                         77.77%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <special,special>                          99          1          -    Covered              
+#             bin <normal,special>                           50          1          -    Covered              
+#             bin <special,normal>                           50          1          -    Covered              
+#             bin <normal,normal>                            50          1          -    Covered              
+#             bin <zero_denorm,normal>                       50          1          -    Covered              
+#             bin <normal,zero_denorm>                       50          1          -    Covered              
+#             bin <zero_denorm,zero_denorm>                 100          1          -    Covered              
+#             bin <zero_denorm,special>                       0          1          1    ZERO                 
+#             bin <special,zero_denorm>                       0          1          1    ZERO                 
+# 
+# TOTAL COVERGROUP COVERAGE: 94.44%  COVERGROUP TYPES: 1
+# 
+# Total Coverage By Instance (filtered view): 94.44%
+# 
+# End time: 12:36:33 on Dec 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
